@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Farenheit-and-Celsius-conversion" />
+    <meta name="description" content="Torus-Vol-SA-calculator" />
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="KestrelBryce" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +20,7 @@
   <!-- page title -->
     <title>Torus Volume and Surface Area calculator</title>
   </head>
+
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
@@ -30,17 +31,24 @@
         </div>
       </header>
 
-      <p>Enter the dimensions of your Torus:</p>
+      <center>  <p>Enter the dimensions of your Torus:</p>  </center>
 
       <!-- image -->
-      <img src="./fav_index/torus.svg"
-      width= "425"
-      height= "300">
-
-      <p>Note: on image displayed, r = Tube Radius, and R = Radius of Revolution</p>
+      <center>  
+        <img src="./fav_index/torus.svg"
+        width= "425"
+        height= "300">
+      </center>
+      
+      <br></br>
+      
+      <center>  <p>Note: on image displayed, r = Tube Radius, and R = Radius of Revolution. The Tube Radius cannot be smaller than the Radius of Revolution, as that will result in an impossible shape.</p>  
+      <p>Also, scroll down to see the volume results after pressing the button.</p> </center>
+      
       <!-- User input -->
   
-        <!-- Tube Radius textbox -->        
+        <!-- Tube Radius textbox -->  
+      <center>
         <p>Tube Radius here:</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
@@ -52,9 +60,10 @@
             <label class="mdl-textfield__label" for="TuRad-here">Numbers go here...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
+      </center>
 
-
-            <!-- Radius of Revolution textbox -->
+        <!-- Radius of Revolution textbox -->
+    <center>  
       <p>Radius of Revolution here:</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
@@ -66,9 +75,10 @@
             <label class="mdl-textfield__label" for="RadORev-here">Numbers go here...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-
+    </center>
       
           <!-- Tube Radius calculate button -->
+      <center>
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:Calculate_surface_area()">
           <p>Calculate surface area</p>
         </button>
@@ -77,10 +87,11 @@
           <div id="Surface-area-results">
 
           </div>
-      
+      </center>
 
       
           <!-- Radius of Revolution calculate button -->
+      <center>
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:Calculate_volume()">
           <p>Calculate volume</p>
         </button>
@@ -88,7 +99,8 @@
         <p>
           <div id="Volume-results">
 
-          </div> 
+          </div>
+      </center>  
       </main>
     </div>
   </body>

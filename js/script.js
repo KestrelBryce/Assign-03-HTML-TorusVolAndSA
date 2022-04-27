@@ -12,7 +12,7 @@ function Calculate_surface_area() {
   // remember to use .toFixed(2) to round to two decimal places
   
   // output for volume
-  document.getElementById('Surface-area-results').innerHTML = "Your Surface area in centimeters rounded to two decimal places is " + Surface_area_answer.toFixed(2) +  "cm<sup>2</sup>"
+  document.getElementById('Surface-area-results').innerHTML = "Your Surface area in centimeters rounded to two decimal places is " + Surface_area_answer.toFixed(2) +  "cm<sup>2</sup>" + "."
 
 
 }
